@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.gradeAdd">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/include10"
+            layout="@layout/toolbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:text="Nazwa (opis) oceny"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/gradeNameText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include10"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/gradeNameText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/textView11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:text="Maksymalna wartość możliwa do uzyskania \n(np. 5 (ocena) lub 10 (punkty))"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/gradeNameText"
+            app:layout_constraintStart_toStartOf="@+id/gradeNameText"
+            app:layout_constraintTop_toBottomOf="@+id/gradeNameText" />
+
+        <EditText
+            android:id="@+id/gradeMaxInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/textView12"
+            app:layout_constraintEnd_toEndOf="@+id/textView11"
+            app:layout_constraintStart_toStartOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Czy ocena jest wymagana?"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/gradeMaxInput"
+            app:layout_constraintStart_toStartOf="@+id/gradeMaxInput"
+            app:layout_constraintTop_toBottomOf="@+id/gradeMaxInput" />
+
+        <Switch
+            android:id="@+id/gradeRequirement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="141dp"
+            android:checked="true"
+            android:drawablePadding="10dp"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:showText="true"
+            android:splitTrack="false"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textIsSelectable="false"
+            android:textOff="Nie"
+            android:textOn="Tak"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:thumb="@android:drawable/editbox_background_normal"
+            android:typeface="normal"
+            app:layout_constraintBottom_toTopOf="@+id/textView13"
+            app:layout_constraintEnd_toEndOf="@+id/textView12"
+            app:layout_constraintStart_toStartOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/textView12"
+            tools:checked="true" />
+
+        <Button
+            android:id="@+id/addGradeSaveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Zapisz"
+            app:layout_constraintEnd_toEndOf="@+id/textView13"
+            app:layout_constraintStart_toStartOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Ocena przypisywana jest do wszystkich grup\n w ramach przedmiotu"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="@+id/gradeRequirement"
+            app:layout_constraintStart_toStartOf="@+id/gradeRequirement"
+            app:layout_constraintTop_toBottomOf="@+id/gradeRequirement" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/welcomeFragment2">
+    <fragment
+        android:id="@+id/welcomeFragment2"
+        android:name="com.example.myapplication.fragments.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment2_to_groupListFragment"
+            app:destination="@id/groupListFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment2_to_lectureAddFragment"
+            app:destination="@id/lectureAddFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment2_to_settings"
+            app:destination="@id/settings" />
+        <action
+            android:id="@+id/action_welcomeFragment2_to_shortcut2"
+            app:destination="@id/shortcut2" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupListFragment"
+        android:name="com.example.myapplication.fragments.groupListFragment"
+        android:label="fragment_grouplist"
+        tools:layout="@layout/fragment_grouplist" >
+        <action
+            android:id="@+id/action_groupListFragment_to_welcomeFragment2"
+            app:destination="@id/welcomeFragment2" />
+        <action
+            android:id="@+id/action_groupListFragment_to_groupDetails"
+            app:destination="@id/groupDetails" />
+        <action
+            android:id="@+id/action_groupListFragment_to_groupAdd"
+            app:destination="@id/groupAdd" />
+        <action
+            android:id="@+id/action_groupListFragment_to_lectureAddFragment"
+            app:destination="@id/lectureAddFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lectureAddFragment"
+        android:name="com.example.myapplication.fragments.lectureAddFragment"
+        android:label="fragment_lecture_add"
+        tools:layout="@layout/fragment_lecture_add" >
+        <action
+            android:id="@+id/action_lectureAddFragment_to_welcomeFragment2"
+            app:destination="@id/welcomeFragment2" />
+        <action
+            android:id="@+id/action_lectureAddFragment_to_groupListFragment"
+            app:destination="@id/groupListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupDetails"
+        android:name="com.example.myapplication.fragments.GroupDetails"
+        android:label="fragment_group_details"
+        tools:layout="@layout/fragment_group_details" >
+        <action
+            android:id="@+id/action_groupDetails_to_groupListFragment"
+            app:destination="@id/groupListFragment" />
+        <action
+            android:id="@+id/action_groupDetails_to_groupGrades"
+            app:destination="@id/groupGrades" />
+        <action
+            android:id="@+id/action_groupDetails_to_groupAdd"
+            app:destination="@id/groupAdd" />
+        <action
+            android:id="@+id/action_groupDetails_to_groupStudents"
+            app:destination="@id/groupStudents" />
+    </fragment>
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.example.myapplication.fragments.Settings"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settings_to_welcomeFragment2"
+            app:destination="@id/welcomeFragment2" />
+        <action
+            android:id="@+id/action_settings_to_students"
+            app:destination="@id/students" />
+    </fragment>
+    <fragment
+        android:id="@+id/students"
+        android:name="com.example.myapplication.fragments.Students"
+        android:label="fragment_students"
+        tools:layout="@layout/fragment_students" >
+        <action
+            android:id="@+id/action_students_to_settings"
+            app:destination="@id/settings" />
+        <action
+            android:id="@+id/action_students_to_editStudent"
+            app:destination="@id/editStudent" />
+    </fragment>
+    <fragment
+        android:id="@+id/editStudent"
+        android:name="com.example.myapplication.fragments.EditStudent"
+        android:label="fragment_edit_student"
+        tools:layout="@layout/fragment_edit_student" >
+        <action
+            android:id="@+id/action_editStudent_to_students"
+            app:destination="@id/students" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupGrades"
+        android:name="com.example.myapplication.fragments.GroupGrades"
+        android:label="fragment_group_grades"
+        tools:layout="@layout/fragment_group_grades" >
+        <action
+            android:id="@+id/action_groupGrades_to_groupDetails"
+            app:destination="@id/groupDetails" />
+        <action
+            android:id="@+id/action_groupGrades_to_gradeAdd"
+            app:destination="@id/gradeAdd" />
+        <action
+            android:id="@+id/action_groupGrades_to_gradesList2"
+            app:destination="@id/gradesList2" />
+        <action
+            android:id="@+id/action_groupGrades_to_studentsGrades"
+            app:destination="@id/studentsGrades" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupAdd"
+        android:name="com.example.myapplication.fragments.groupAdd"
+        android:label="fragment_group_add"
+        tools:layout="@layout/fragment_group_add" >
+        <action
+            android:id="@+id/action_groupAdd_to_groupListFragment"
+            app:destination="@id/groupListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shortcut2"
+        android:name="com.example.myapplication.fragments.Shortcut"
+        android:label="fragment_shortcut"
+        tools:layout="@layout/fragment_shortcut" >
+        <action
+            android:id="@+id/action_shortcut2_to_welcomeFragment2"
+            app:destination="@id/welcomeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupStudents"
+        android:name="com.example.myapplication.fragments.groupStudents"
+        android:label="groupStudents" >
+        <action
+            android:id="@+id/action_groupStudents_to_groupDetails"
+            app:destination="@id/groupDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/gradeAdd"
+        android:name="com.example.myapplication.fragments.gradeAdd"
+        android:label="fragment_grade_add"
+        tools:layout="@layout/fragment_grade_add" >
+        <action
+            android:id="@+id/action_gradeAdd_to_groupGrades"
+            app:destination="@id/groupGrades" />
+        <action
+            android:id="@+id/action_gradeAdd_to_gradesList2"
+            app:destination="@id/gradesList2" />
+    </fragment>
+    <fragment
+        android:id="@+id/gradesList2"
+        android:name="com.example.myapplication.fragments.gradesList"
+        android:label="fragment_grades_list"
+        tools:layout="@layout/fragment_grades_list" >
+        <action
+            android:id="@+id/action_gradesList2_to_gradeAdd"
+            app:destination="@id/gradeAdd" />
+        <action
+            android:id="@+id/action_gradesList2_to_groupGrades"
+            app:destination="@id/groupGrades" />
+        <action
+            android:id="@+id/action_gradesList2_to_gradesDetail"
+            app:destination="@id/gradesDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/gradesDetail"
+        android:name="com.example.myapplication.fragments.gradesDetail"
+        android:label="fragment_grades_detail"
+        tools:layout="@layout/fragment_grades_detail" >
+        <action
+            android:id="@+id/action_gradesDetail_to_gradesList2"
+            app:destination="@id/gradesList2" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentsGrades"
+        android:name="com.example.myapplication.fragments.studentsGrades"
+        android:label="fragment_students_grades"
+        tools:layout="@layout/fragment_students_grades" >
+        <action
+            android:id="@+id/action_studentsGrades_to_groupGrades"
+            app:destination="@id/groupGrades" />
+    </fragment>
+</navigation>

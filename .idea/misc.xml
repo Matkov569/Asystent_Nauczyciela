@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/LectureHelp/app/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
+        <entry key="..\:/LectureHelp/app/src/main/res/layout/biggertoolbar.xml" value="0.27291666666666664" />
+        <entry key="..\:/LectureHelp/app/src/main/res/layout/fragment_edit_student.xml" value="0.27291666666666664" />
+        <entry key="..\:/LectureHelp/app/src/main/res/layout/fragment_grade_add.xml" value="0.27291666666666664" />
+        <entry key="..\:/LectureHelp/app/src/main/res/layout/fragment_grades_detail.xml" value="0.27291666666666664" />
+        <entry key="..\:/LectureHelp/app/src/main/res/layout/fragment_grades_list.xml" value="0.27291666666666664" />
+        <entry key="..\:/LectureHelp/app/src/main/res/layout/fragment_group_add.xml" value="0.33" />
+        <entry key="..\:/LectureHelp/app/src/main/res/layout/fragment_group_details.xml" value="0.27291666666666664" />
+        <entry key="..\:/LectureHelp/app/src/main/res/layout/fragment_group_grades.xml" value="0.27291666666666664" />
+        <entry key="..\:/LectureHelp/app/src/main/res/layout/fragment_group_students.xml" value="0.27291666666666664" />
+        <entry key="..\:/LectureHelp/app/src/main/res/layout/fragment_grouplist.xml" value="0.27291666666666664" />
+        <entry key="..\:/LectureHelp/app/src/main/res/layout/fragment_lecture_add.xml" value="0.27291666666666664" />
+        <entry key="..\:/LectureHelp/app/src/main/res/layout/fragment_settings.xml" value="0.27291666666666664" />
+        <entry key="..\:/LectureHelp/app/src/main/res/layout/fragment_shortcut.xml" value="0.18" />
+        <entry key="..\:/LectureHelp/app/src/main/res/layout/fragment_students.xml" value="0.27291666666666664" />
+        <entry key="..\:/LectureHelp/app/src/main/res/layout/fragment_students_grades.xml" value="0.27291666666666664" />
+        <entry key="..\:/LectureHelp/app/src/main/res/layout/fragment_welcome.xml" value="0.27291666666666664" />
+        <entry key="..\:/LectureHelp/app/src/main/res/layout/gradecard.xml" value="0.27291666666666664" />
+        <entry key="..\:/LectureHelp/app/src/main/res/layout/groupcard.xml" value="0.27291666666666664" />
+        <entry key="..\:/LectureHelp/app/src/main/res/layout/groupdetails.xml" value="0.27291666666666664" />
+        <entry key="..\:/LectureHelp/app/src/main/res/layout/lecture_option.xml" value="0.27291666666666664" />
+        <entry key="..\:/LectureHelp/app/src/main/res/layout/lecturecard.xml" value="0.25" />
+        <entry key="..\:/LectureHelp/app/src/main/res/layout/onelinecard.xml" value="0.27291666666666664" />
+        <entry key="..\:/LectureHelp/app/src/main/res/layout/przedmiot.xml" value="0.27291666666666664" />
+        <entry key="..\:/LectureHelp/app/src/main/res/layout/student.xml" value="0.67" />
+        <entry key="..\:/LectureHelp/app/src/main/res/layout/studentcard.xml" value="0.27291666666666664" />
+        <entry key="..\:/LectureHelp/app/src/main/res/layout/studentgradecard.xml" value="0.27291666666666664" />
+        <entry key="..\:/LectureHelp/app/src/main/res/layout/studentsgradescard.xml" value="0.33" />
+        <entry key="..\:/LectureHelp/app/src/main/res/layout/todo.xml" value="0.25" />
+        <entry key="..\:/LectureHelp/app/src/main/res/layout/toolbar.xml" value="0.27291666666666664" />
+        <entry key="..\:/MyApplication5/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/MyApplication5/app/src/main/res/layout/biggertoolbar.xml" value="0.67" />
+        <entry key="..\:/MyApplication5/app/src/main/res/layout/fragment_group_details.xml" value="0.3958333333333333" />
+        <entry key="..\:/MyApplication5/app/src/main/res/layout/fragment_grouplist.xml" value="0.24739583333333334" />
+        <entry key="..\:/MyApplication5/app/src/main/res/layout/fragment_lecture_add.xml" value="0.3958333333333333" />
+        <entry key="..\:/MyApplication5/app/src/main/res/layout/fragment_second.xml" value="0.2957427536231884" />
+        <entry key="..\:/MyApplication5/app/src/main/res/layout/fragment_welcome.xml" value="0.2957427536231884" />
+        <entry key="..\:/MyApplication5/app/src/main/res/layout/groupcard.xml" value="0.3999094202898551" />
+        <entry key="..\:/MyApplication5/app/src/main/res/layout/groupdetails.xml" value="0.25" />
+        <entry key="..\:/MyApplication5/app/src/main/res/layout/onelinecard.xml" value="0.3999094202898551" />
+        <entry key="..\:/MyApplication5/app/src/main/res/layout/przedmiot.xml" value="0.3999094202898551" />
+        <entry key="..\:/MyApplication5/app/src/main/res/layout/toolbar.xml" value="0.3999094202898551" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
