@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -21,6 +22,9 @@ import com.example.myapplication.adapters.studentsGradesAdapter
 import com.example.myapplication.androidVM.*
 import com.example.myapplication.data.grade
 import com.example.myapplication.data.student
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 
 class studentsGrades : Fragment() {
 
@@ -56,7 +60,7 @@ class studentsGrades : Fragment() {
         var student = StudentVM.getStudent(students[viewModel.currentStudent])
 
         var grades = GradeStudVM.getForStud(students[viewModel.currentStudent])
-
+        println(grades.toString())
         val adapter = gradeStudentAdapter(viewModel, GradeStudVM, toDoVM, context, student,lecture.Skrot)
         val recyclerView = view.findViewById<RecyclerView>(R.id.SGcardRV);
         recyclerView.adapter = adapter
@@ -83,7 +87,13 @@ class studentsGrades : Fragment() {
         (view.findViewById<TextView>(R.id.toolbarText)).setText(student.Nazwisko+" "+student.Imie);
 
         (view.findViewById<ImageButton>(R.id.return_btn)).setOnClickListener {
-            it.findNavController().navigate(R.id.action_studentsGrades_to_groupGrades)
+            runBlocking {
+                launch {
+                    delay(500)
+                    it.findNavController().navigate(R.id.action_studentsGrades_to_groupGrades)
+                }
+                Toast.makeText(context,"Zapisuję...",Toast.LENGTH_SHORT).show()
+            }
         }
 
 

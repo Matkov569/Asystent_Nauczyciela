@@ -18,6 +18,10 @@ import com.example.myapplication.data.grade
 import com.example.myapplication.data.gradeStudent
 import com.example.myapplication.data.student
 import com.example.myapplication.data.toDo
+import kotlinx.coroutines.android.awaitFrame
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 
 class gradeStudentAdapter(
     val vm: MainViewModel,
@@ -56,7 +60,7 @@ class gradeStudentAdapter(
     override fun onBindViewHolder(holder: Holder, position: Int) {
         holder.Nazwa.text=objs[position].Nazwa;
         holder.Max.text=objs[position].Max.toString();
-        var index = grades.indexOf(grades.find { it.id == objs[position].id});
+        var index = grades.indexOf(grades.find { it.grade == objs[position].id});
 
         var grade:gradeStudent;
 
@@ -94,7 +98,13 @@ class gradeStudentAdapter(
                             )
 
                         grade.mark = holder.Ocena.text.toString().toDouble();
-                        GSVM.insert(grade)
+                        runBlocking {
+                            launch {
+                                delay(0)
+
+                                GSVM.insert(grade)
+                            }
+                        }
                     }
                     else {
                         Toast.makeText(context, "Wprowadź poprawną wartość!", Toast.LENGTH_LONG)

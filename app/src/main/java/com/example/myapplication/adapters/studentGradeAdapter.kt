@@ -56,7 +56,7 @@ class studentGradeAdapter(
     override fun onBindViewHolder(holder: Holder, position: Int) {
         holder.Nazwa.text = objs[position].Nazwisko + " " + objs[position].Imie;
         holder.Max.text = grade.Max.toString();
-        var index = grades.indexOf(grades.find { it.id == objs[position].id});
+        var index = grades.indexOf(grades.find { it.student == objs[position].id});
 
         var Ngrade: gradeStudent;
 
